@@ -22,6 +22,7 @@ $ pip3 install pandas logzero xlrd xlwt openpyxl
 今回は"`災害状況`"に"`保育`"を含むものを抽出してExcelファイルに保存しています。必要な条件に修正してください。コメントアウトしてありますが、すべてを保存しようとしても非常に時間がかかります。
 
 ```
+###### modify according to your purpose 
 hoiku = df[df['災害状況'].str.contains('保育', na=False)]
 hoiku.to_excel('rosai18-28.xlsx', sheet_name='hoiku')
 ```
