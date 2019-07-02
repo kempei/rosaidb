@@ -39,6 +39,7 @@ def getDataframe():
 
 downloadDatabase()
 df = getDataframe()
-#df.to_excel('rosai18-28.xlsx', sheet_name='all')
+
+###### modify according to your purpose 
 hoiku = df[df['災害状況'].str.contains('保育', na=False)]
 hoiku.to_excel('rosai18-28.xlsx', sheet_name='hoiku')
